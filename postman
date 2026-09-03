@@ -1,0 +1,209 @@
+{
+  "info": {
+    "_postman_id": "7655917a-77c6-40d2-91e9-be07a635552e",
+    "name": "FieldForce API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54942536",
+    "_collection_link": "https://go.postman.co/collection/54942536-7655917a-77c6-40d2-91e9-be07a635552e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login - Valid Credentials",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "invalid creditials",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"7666783801\",\r\n  \"password\": \"123445678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get imformation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"7666783801\",\r\n  \"password\": \"12345678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get imformation Copy",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"7666783801\",\r\n  \"password\": \"12345678\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login - Valid Credentials",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"7666783801\",\r\n  \"password\": \"12345678\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/account/authenticate",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "account",
+            "authenticate"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"From\": 1,\r\n  \"To\": 50,\r\n  \"FromDate\": null,\r\n  \"ToDate\": null,\r\n  \"IsCheckIn\": \"\",\r\n  \"IsProductsAvailable\": \"\",\r\n  \"IsVisitForm\": \"\",\r\n  \"LeadId\": 4213,\r\n  \"OpportunityId\": \"\",\r\n  \"StatusIds\": \"\",\r\n  \"Text\": \"\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/CRM/v1/LeadTransaction",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "CRM",
+            "v1",
+            "LeadTransaction"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add customer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"company_name\": \"New Enterprise Pvt Ltd\",\r\n  \"contact_person\": \"Rahul \",\r\n  \"designation\": \"Manager\",\r\n  \"mobile\": \"+91 9876543210\",\r\n  \"email\": \"manu@gmail.com\",\r\n  \"assigned_to\": \"sushant patil\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://test.fieldforceconnect.com/api/CRM/Leads",
+          "protocol": "https",
+          "host": [
+            "test",
+            "fieldforceconnect",
+            "com"
+          ],
+          "path": [
+            "api",
+            "CRM",
+            "Leads"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
